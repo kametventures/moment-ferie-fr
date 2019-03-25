@@ -13,7 +13,7 @@
   "author": "damienlabat",
   "homepage": "https://github.com/DepthFrance/moment-ferie-fr",
   "dependencies": {
-    "moment": "^2.4.0"
+    "moment-timezone": "^0.5.23"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

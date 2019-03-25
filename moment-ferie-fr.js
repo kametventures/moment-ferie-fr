@@ -166,7 +166,7 @@
       return this.moment = initialize(moment);
     });
   } else if (typeof module !== "undefined") {
-    module.exports = initialize(require("moment"));
+    module.exports = initialize(require("moment-timezone"));
   } else if (typeof window !== "undefined" && window.moment) {
     this.moment = initialize(this.moment);
   }
