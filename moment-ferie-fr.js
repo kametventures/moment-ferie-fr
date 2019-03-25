@@ -1,4 +1,3 @@
-// https://github.com/damienlabat/moment-ferie-fr
 (function () {
 
   "use strict";
@@ -138,7 +137,7 @@
     moment.fn.getFerie = function () {
       for (var key in listeFerie) {
         if (listeFerie.hasOwnProperty(key)) {
-          if (this.isSame(listeFerie[key].call(this), 'days')) {
+          if (moment(this, 'Europe/Paris').format('DD-MM') === moment(listeFerie[key].call(this)).format('DD-MM')) {
             return key;
           }
         }
